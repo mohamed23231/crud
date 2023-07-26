@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootStrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-75 m-auto my-5">
+      <label for="productNameInput"> product Name</label>
+      <input class="mb-3 form-control" type="text" id="productNameInput" />
+      <label for="productPriceInput"> product Price</label>
+      <input class="mb-3 form-control" type="number" id="productPriceInput" />
+      <label for="productdcategoryInput"> productd category</label>
+      <input class="mb-3 form-control" type="text" id="productdcategoryInput" />
+      <label for="productdDesriptionInput"> productdsc</label>
+      <textarea
+        id="productdDesriptionInput"
+        class="mb-3 form-control"
+      ></textarea>
+      <button id="addProduct" class="btn btn-info">Add Product</button>
+      <button id="saveChangedProduct" class="btn btn-outline-success">
+        Save Changes
+      </button>
+    </div>
+    <div class="w-75 m-auto my-5">
+      <input
+        oninput="searchInput(this.value)"
+        class="form-control w-75 m-auto"
+        type="text"
+        id="search"
+      />
+      <table class="table">
+        <thead>
+          <th>item Number</th>
+          <th>product Name</th>
+          <th>product Price</th>
+          <th>productd category</th>
+          <th>productdsc</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </thead>
+        <tbody id="productsBody"></tbody>
+      </table>
+    </div>
+    <script src="bootStrap/popper.min.js"></script>
+    <script src="bootStrap/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
